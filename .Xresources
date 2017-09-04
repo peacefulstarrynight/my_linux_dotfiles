@@ -1,0 +1,58 @@
+##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
+##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
+##### PROCEED WITH CAUTION! #####
+
+! special colors
+*.foreground:  #00ff00
+*.background:  #000000
+*.cursorColor:  #00aa00
+! black
+*.color0:      #00007f
+*.color8:      #61aa30
+! red
+*.color1:      #0cdfff
+*.color9:      #ff0004
+! green
+*.color2:      #6d4b07
+*.color10:     #ffff00
+! yellow
+*.color3:      #9caa00
+*.color11:     #00ffee
+! blue
+*.color4:      #3815ff
+*.color12:     #ff00fb
+! magenta
+*.color5:      #ff0004
+*.color13:     #c700ce
+! cyan
+*.color6:      #ffa617
+*.color14:     #1d2b3b
+! white
+*.color7:      #00fff7
+*.color15:     #59043e
+
+URxvt*scrollBar:         false
+URxvt*scrollBar_right:   false
+
+URxvt*transparent:       false
+
+URxvt.font: xft:monofur for Powerline:pixelsize=14
+URxvt.letterSpace: 0
+
+*antialias:  false
+*autohint:   false
+
+URxvt.perl-ext-common: default,matcher,url-select,clipboard,keyoard-select
+URxvt.url-launcher: firefox
+
+URxvt.matcher.button: 1
+URxvt.url-select.underline 	: true
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-x           	: perl:keyboard-select:activate
+URxvt.keysym.M-u           	: perl:url-select:select_next
+URxvt.keysym.Shift-Control-V    :eval:paste_clipboard
+URxvt.keysym.Shift-Control-C    :eval:selection_to_clipboard
+URxvt.keysym.M-s         	: perl:keyboard-select:search
+URxvt.keysym.M-C-v          	: perl:clipboard:paste_escaped
+!Urxvt.perl-lib            	: /usr/lib/urxvt/perl/
+
